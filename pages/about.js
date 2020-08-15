@@ -5,10 +5,8 @@ import Error from "./_error";
 
 const About = ({ userData, statusCode }) => {
   if (statusCode) {
-    console.log(statusCode);
     return <Error status={statusCode} />;
   }
-  console.log(statusCode);
 
   return (
     <Layout title="About Me">
@@ -24,7 +22,7 @@ const About = ({ userData, statusCode }) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps(context) {
   const resp = await axiosInstance.get(
     "https://api.github.com/users/calebrussel77"
   );

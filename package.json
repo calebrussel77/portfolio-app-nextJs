@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "autoprefixer": "^9.8.6",
     "axios": "^0.19.2",
     "next": "9.5.2",
     "nprogress": "^0.2.0",
@@ -16,7 +17,6 @@
     "tailwindcss": "^1.6.2"
   },
   "devDependencies": {
-    "postcss-flexbugs-fixes": "^4.2.1",
-    "postcss-preset-env": "^6.7.0"
+    "@fullhuman/postcss-purgecss": "^2.3.0"
   }
 }

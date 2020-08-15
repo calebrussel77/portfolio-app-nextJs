@@ -3,10 +3,11 @@ import Layout from "../components/hoc/Layout";
 import Link from "next/link";
 
 const PostLink = ({ title, slug }) => {
-  const linkTitle = title.replace(" ", "-").toLowerCase();
   return (
     <li>
-      <Link as={`/${slug}`} href={`post?title=${linkTitle}`}>
+      {/*The as property is use to specify your normal route */}
+      {/*The `href` with the `as` is use to give the template of your route*/}
+      <Link as={`/${slug}`} href={`/[post]`}>
         <a className="hover:text-indigo-700">{title}</a>
       </Link>
     </li>
