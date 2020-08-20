@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["./src/**/*.html", "./src/**/*.js", "./src/**/*.jsx"],
+  purge: ["./src/**/*.js"],
   target: "relaxed",
   prefix: "",
   important: false,
